@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:grid x="0" y="0" width="182.446" height="182.446"/>
+  </defs>
+  <ellipse style="fill: rgb(179, 19, 19);" cx="249.315" cy="1.059" rx="249.315" ry="249.315"/>
+</svg>
