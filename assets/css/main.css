@@ -17,5 +17,5 @@ h1 {
 }
 
 .tag.active {
-  @apply bg-neutro-red-eg  border-white text-morado-eg;
+  @apply bg-neutro-red-eg  border-white text-morado-eg font-semibold;
 }

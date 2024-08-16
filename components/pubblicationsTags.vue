@@ -1,11 +1,11 @@
 <template>
     <ul class="inline">
-        <li class="tag active">all tags</li>
+        <li class="tag active pub_tag">all tags</li>
         <!-- research lines list -->
         <li
             v-for="tag in tags_research"
             :key="tag.slug"
-            class="tag"
+            class="tag pub_tag"
         >{{ tag.text }}</li>
         
         <!-- people list -->
@@ -42,3 +42,13 @@
     })
 
 </script>
+
+<style scooped>
+
+.pub_tag{
+    &.active{
+        @apply bg-neutro-blue-eg  border-white text-azul-eg
+    }
+}
+
+</style>

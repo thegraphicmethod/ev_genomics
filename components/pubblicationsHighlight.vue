@@ -25,14 +25,7 @@
             >all the pubblications ...</NuxtLink>
        </div>
 
-      <!-- call for action 
-      <div class="col-start-1 col-span-2 bg-morado-eg"></div>
-
-      <div class="col-start-3 col-span-2 pr-6 ">
-        <NuxtLink to="/blog" class="text-white bg-morado-eg font-semibold text-lg uppercase  py-3 rounded-r-full block w-full font-mono">our blog</NuxtLink> 
-      </div>
-      -->
-
+     
   
 </template>
 
@@ -52,3 +45,4 @@
         
     })
     </script>
+
