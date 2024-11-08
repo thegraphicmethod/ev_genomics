@@ -1,27 +1,27 @@
 <template>
     <!-- blog latest-->
    
-      <div class="col-start-3 col-span-2 mb-6">
+      <div class="lg:col-start-3 lg:col-span-2 mb-6">
         <h6 class="uppercase font-bold text-azul-eg">highlighted research</h6>
       </div>
 
       <!-- container -->
-       <div class="col-start-3 col-end-9 grid grid-cols-3 mb-4">
+       <div class="lg:col-start-3 lg:col-end-9 grid grid-cols-1 md:grid-cols-3 mb-4">
             <div
                 v-for="(pub,index) in pubblications"
                 class="pr-6"
             > 
                 <p class="mb-6 leading-tight"> {{ pub.authors }}</p>
-                <h3 class="text-lg leading-tight font-semibold mb-6 text-azul-eg">{{ pub.title }}</h3>
-                <p class="italic leading-tight">{{ pub.review }}</p>
+                <h3 class="text-lg leading-tight font-bold mb-6 text-black pl-2">{{ pub.title }}</h3>
+                <p class="italic leading-tight pl-2">{{ pub.review }}</p>
             </div>
 
        </div>
 
-       <div class="col-start-3 col-end-5 mt-12">
+       <div class="lg:col-start-3 lg:col-end-5 mt-12">
 
         <NuxtLink to="pubblications/"
-            class="border border-stone-200 pl-6 pr-3 py-2 font-semibold rounded-full w-full block uppercase bg-white text-azul-eg hover:bg-neutro-blue-eg hover:text-azul-eg transition-all text-sm"
+            class="border border-stone-200 pl-6 pr-3 py-2 font-semibold rounded-full w-full block uppercase bg-azul-eg text-white hover:bg-neutro-blue-eg hover:text-white transition-all text-sm"
             >all the pubblications ...</NuxtLink>
        </div>
 

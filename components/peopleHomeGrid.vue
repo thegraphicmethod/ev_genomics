@@ -1,9 +1,16 @@
 <template>
 
+    <div class="lg:col-start-7 md:col-span-3 h-px bg-gray-300 mb-6 lg:mb-6 bg-blend-multiply md:mb-12 "></div>
+
     <!-- People -->
+    <div class="lg:col-start-7 lg:col-span-2  h-12">
+        <h6 class="uppercase font-bold text-verde-eg">People</h6>
+    </div>
     
-        <section class="row-start-2 col-start-5 col-span-5 pb-36">
-            <article class="grid grid-cols-5">
+    <section class=" lg:col-start-5 lg:col-span-5 pb-36">
+
+
+            <article class="grid lg:grid-cols-5 md:grid-cols-2">
 
                 <div 
                     v-for="one in people"
@@ -21,11 +28,9 @@
                     </nuxt-link>
                 </div>   
             </article>
-        </section>
+    </section>
 
-        <div class="col-start-7 col-span-2  h-12">
-            <h6 class="uppercase font-bold text-verde-eg">People</h6>
-        </div>
+        
    
 </template>
 

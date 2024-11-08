@@ -44,30 +44,7 @@
             </div>
         </div>
 
-        <!-- new layot -->
-         <div class="lg:col-start-5 lg:col-span-5">
-            <article class="grid grid-cols-5">
-                <!-- about -->
-                <div class="col-span-2 pr-6 mt-6">
-                    <div id="weAre" v-bind="we_are" v-html="we_are.content"></div>
-                    <hr class="my-6 border-stone-200"/>
-                    <div id="location" v-bind="location" v-html="location.content"></div>
-                </div>
-
-                <div class="col-span-3">
-                    <Protein></Protein>
-                </div>
-
-                <div class="col-span-5 mt-6 ">
-                    <CodonsLine></CodonsLine>
-                </div>
-            </article>
-         </div>
-
-
         <!-- about -->
-
-        <!--
         <div class="lg:col-start-5 lg:row-start-1 lg:col-span-2 md:col-span-2 leading-tight pr-6 mt-6  text-stone-800" >
             <div id="weAre" v-bind="we_are" v-html="we_are.content"></div>
             <hr class="my-6 border-stone-200"/>
@@ -77,9 +54,18 @@
         <div class="lg:col-start-8 mt-6 hidden lg:grid lg:col-span-2">
             <Aminoacids></Aminoacids>
         </div>
+
+        <!-- aminoacids  
+        <div class="lg:col-start-8 font-mono uppercase mt-6 font-normal text-stone-400 hidden lg:grid ">
+            <p>tgg ttg agt act tgc cta atg cga gtg ata ggg gac gca cga gat agt cta tta ttc gtt 
+            ccg tgc ccc tga cct cga ctg atc ctc gag gtg cgc atc act agg ccg act tgg ttg agt act tgc cta atg cgt acc tcg act gat acc tcg agc gtg cgc atc acg tag gcc gac ttg gtt gaa
+            </p>
+        </div>
+
+        <div class="mt-6 bg-gray-200  h-full hidden lg:grid">a</div>
         -->
 
-        <div class="lg:col-span-3 h-px bg-gray-300 mt-0"></div>
+        <div class="lg:col-span-3 h-px bg-gray-300 mt-12"></div>
 
     </section>
 

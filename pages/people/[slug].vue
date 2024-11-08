@@ -1,15 +1,17 @@
 <template>
     <!-- hero -->
-     <section class="grid grid-cols-18">
-        <div class="bg-stone-100 col-span-5 h-12">&nbsp;</div>
-        <div class="bg-slate-100 mix-blend-multiply h-12 ">&nbsp;</div>
-        <div class="bg-slate-200 mix-blend-multiply h-12 ">&nbsp;</div>
-       
-        <div class="bg-neutro-green-eg col-span-10 h-12">&nbsp;</div>
+    <section class=" grid-cols-18 md:grid hidden mt-6 lg:mt-0">
+        <div class="bg-gray-100 lg:col-span-3 md:col-span-2 h-12">&nbsp;</div>
+        <div class="bg-gray-100 col-span-2 h-12">&nbsp;</div>
+        <div class="bg-gray-100 mix-blend-multiply h-12 ">&nbsp;</div>
+        <div class="bg-gray-200 mix-blend-multiply h-12 ">&nbsp;</div>
+        <div class="bg-neutro-green-eg lg:col-span-9 md:col-span-12 h-12">&nbsp;</div>
      </section>
 
-    <section class="grid grid-cols-9 pb-24 bg-neutro-green-eg auto-rows-min">
-        <div class="col-start-5 col-span-3 h-12">
+    <section class="grid_eg_3 pb-24 bg-neutro-green-eg auto-rows-min mt-6 md:mt-0">
+       
+        <!-- bredcrumb -->
+        <div class="lg:col-start-5 lg:col-span-5 col-span-2 h-12 hidden lg:grid">
             <h6 class=" my-2 text-stone-700">
                 <NuxtLink to="../people" class="uppercase font-bold text-verde-eg">
                     people
@@ -18,42 +20,48 @@
             </h6>
         </div>
 
-        <div class="col-span-2 row-start-2 self-stretch">
-            <img src="/img/people/mar.jpg" alt="mar" class="rounded-full block m-auto grayscale mix-blend-multiply">
-        </div>
+        <!-- left: picture and name-->
+         <div class="lg:col-span-3 pt-12 lg:pt-6 ">
+            <div class="lg:grid lg:grid-cols-3">
+                <img src="/img/people/mar.jpg" alt="mar" class="rounded-full block m-auto grayscale mix-blend-multiply self-stretch lg:col-span-2">
+            
+                <div class="lg:col-start-2 lg:col-span-2">
+                    <p class="text-3xl lg:text-4xl leading-none text-stone-700 mt-6">
+                        <span class="italic text-stone-500">{{ people.first_name }}</span><br/>
+                        <span class="font-semibold tracking-tight">{{ people.family_name }}</span>
+                    </p>
+                    <p class="italic text-sm mt-1">{{ people.e_mail }}l</p>
+                </div>
+            </div>
+            
+         </div>
 
-        <div class="col-start-2 col-span-2 row-start-3">
-            <p class="text-4xl leading-none text-stone-700 mt-6">
-                <span class="italic text-stone-500">{{ people.first_name }}</span><br/>
-                <span class="font-semibold tracking-tight">{{ people.family_name }}</span>
-            </p>
-            <p class="italic text-sm mt-1">{{ people.e_mail }}l</p>
-        </div>
-
-        <div class="col-start-5 col-span-3 row-start-2 row-end-5  text-stone-800">
+         <!-- right title and bio -->
+          <div class="text-stone-800 md:col-span-2 lg:col-span-3 lg:col-start-5 pt-12 lg:pt-6">
             <!-- role -->
-            <p class="text-verde-eg role">{{ people.position }}</p>
+            <p class="text-verde-eg role mb-2">{{ people.position }}</p>
 
             <!-- bio -->
             <div v-html="people.bio" id="desc"></div>
-        </div>
+          </div>    
 
     </section>
 
-    <section class="grid grid-cols-18">
-        <div class="bg-neutro-green-eg col-span-5 h-12">&nbsp;</div>
+    <section class="md:grid grid-cols-18 hidden">
+        <div class="bg-neutro-green-eg lg:col-span-4 md:col-span-3 h-12">&nbsp;</div>
         <div class="bg-verde-eg h-12 ">&nbsp;</div>
-        <div class="bg-slate-100 mix-blend-multiply h-12 ">&nbsp;</div>
+        <div class="bg-gray-200 mix-blend-multiply h-12 ">&nbsp;</div>
+        <div class="bg-gray-100 mix-blend-multiply h-12 ">&nbsp;</div>
      </section>
 
-    <!-- pubblications list here -->
 
-    <section class="grid grid-cols-9">
-        <div class="col-start-5 col-span-2  h-12 mt-12">
+    <!-- pubblications list here -->
+    <section class="grid_eg_3">
+        <div class="lg:col-start-5 LGcol-span-2  h-12 mt-12">
             <h6 class="uppercase font-bold text-azul-eg">pubblications</h6>
         </div>
 
-        <div class="col-start-5 col-span-4 mb-24 ">
+        <div class="lg:col-start-5 lg:col-span-4 mb-24 md:col-span-2 md:mt-12 lg:mt-0">
             <div v-for="pub in pubblications" class="mb-6">   
                 <p class="text-sm mb-2 "> {{ pub.authors }} <strong class="font-semibold text-morado-eg"> {{ pub.year }}</strong></p>
                 <h3 class="font-bold text-azul-eg mb-0 pl-2">{{ pub.title }}</h3>
@@ -61,6 +69,7 @@
             </div>
         </div>
     </section>
+
 </template>
 
 <script setup>

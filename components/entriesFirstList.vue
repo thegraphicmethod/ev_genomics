@@ -36,13 +36,17 @@
 </script>
 
 
-<style >
+<style scoped>
     .post{
-        @apply w-4/6 pb-24 border-b-4 border-b-stone-100 pt-12 bg-white px-12 ;
+        @apply md:w-5/6 lg:w-4/6 pb-24 border-b-4 border-b-stone-100 pt-12 bg-white px-6 md:px-12 ;
     }
 
     .post_content img + p{
         @apply text-sm italic mt-2;
+    }
+
+    h1{
+         @apply text-lg md:text-3xl leading-tight md:leading-none; 
     }
 
 </style>

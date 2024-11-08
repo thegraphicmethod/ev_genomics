@@ -12,7 +12,7 @@
         <li
             v-for="tag in tags_members"
             :key="tag.slug"
-            class="tag"
+            class="tag member_tag"
         >{{ tag.text }}</li>
     </ul>
 </template>
@@ -46,9 +46,23 @@
 <style scooped>
 
 .pub_tag{
+    @apply border-azul-eg text-azul-eg font-bold hover:bg-morado-eg hover:text-white hover:border-morado-eg
+}
+
+.pub_tag{
     &.active{
-        @apply bg-neutro-blue-eg  border-white text-azul-eg
+        @apply   border-white text-white bg-azul-eg font-bold
     }
+}
+
+.member_tag{
+
+    @apply border-verde-eg text-verde-eg font-bold;
+
+    &.active{
+        @apply   border-white text-white bg-azul-eg font-bold
+    }
+
 }
 
 </style>

@@ -1,30 +1,33 @@
 <template>
     <!-- blog latest-->
    
-      <div class="col-start-3 col-span-2 mb-6">
+      <div class="lg:col-start-3 lg:col-span-2 md:col-span-3 mb-6">
         <h6 class="uppercase font-bold text-morado-eg">recent posts</h6>
       </div>
 
       <!-- container -->
-       <div class="col-start-3 col-end-9 grid grid-cols-3 mb-6">
-        <div
-            v-for="(entry,index) in entries"
-            class="pr-6"
-        > 
-        <NuxtLink :to="'blog/' + entry.slug">
-            <p><strong class="font-semibold text-morado-eg"> {{ formatBlogDate(entry.date) }}</strong>, {{ formatYY(entry.date)}}</p>
-            <h3 class="text-xl leading-tight font-bold mb-6 hover:text-morado-eg"> {{ entry.title }}</h3>
-        </NuxtLink>
-        </div>
+       <div class="lg:col-start-3 lg:col-end-9 md:col-span-3 mb-6">
+
+            <div class="grid md:grid-cols-3">
+                <div
+                    v-for="(entry,index) in entries"
+                    class="pr-6"
+                > 
+                    <NuxtLink :to="'blog/' + entry.slug">
+                        <p><strong class="font-semibold text-morado-eg"> {{ formatBlogDate(entry.date) }}</strong>, {{ formatYY(entry.date)}}</p>
+                        <h3 class="text-xl leading-tight font-bold mb-6 hover:text-morado-eg"> {{ entry.title }}</h3>
+                    </NuxtLink>
+                </div>
+            </div>
 
        </div>
 
       <!-- call for action -->
-      <div class="col-start-1 col-span-2 bg-morado-eg"></div>
+      <div class="lg:col-start-1 lg:col-span-2  hidden lg:grid bg-morado-eg "></div>
 
-      <div class="col-start-3 col-span-2 pr-6 ">
-        <NuxtLink to="/blog" class="text-white bg-morado-eg font-semibold text-lg uppercase  py-3 rounded-r-full block w-full font-mono">our blog</NuxtLink> 
-      </div>
+        <div class="lg:col-start-3 lg:col-span-2 pr-6">
+            <NuxtLink to="/blog" class="text-white bg-morado-eg font-semibold text-lg uppercase  py-3 rounded-r-full block w-full font-mono lg:pl-0 pl-12">our blog</NuxtLink> 
+        </div>
 
 
 </template>

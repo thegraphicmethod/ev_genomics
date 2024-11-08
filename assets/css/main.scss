@@ -20,3 +20,20 @@ h1{
         @apply bg-neutro-red-eg  border-white text-morado-eg font-semibold
     }
 }
+
+.post_content img + p{
+    @apply text-sm italic mt-2;
+}
+
+.grid_eg{
+    @apply grid grid-cols-1 w-full px-8 lg:px-0 lg:grid-cols-9;
+}
+
+.grid_eg_3{
+    @apply grid grid-cols-1 md:grid-cols-3 w-full px-8 lg:px-0 lg:grid-cols-9;
+}
+
+.grid_eg_18{
+    @apply grid grid-cols-3 lg:grid-cols-18  w-full px-8 lg:px-0;
+}
+

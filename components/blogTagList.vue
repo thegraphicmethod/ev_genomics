@@ -1,6 +1,6 @@
 <template>
     <ul class="inline">
-        <li class="tag active">all tags</li>
+        <li class="tag blog_tag active">all tags</li>
         <li
             v-for="tag in tags"
             :key="tag.slug"
@@ -30,3 +30,13 @@
         }
     })
 </script>
+
+<style scooped>
+    .blog_tag{
+        @apply font-bold;
+        &.active{
+            @apply  border-white text-white bg-morado-eg font-bold;
+        }
+    }
+
+</style>

@@ -1,27 +1,25 @@
 <template>
     <div v-bind="research_line">
-        <h3 class="text-4xl font-semibold mb-4 leading-0 ">{{ research_line.title }}</h3>
+        <h3 class="text-4xl font-bold mb-4 leading-0 lg:pr-12">{{ research_line.title }}</h3>
 
         <div 
-            class="research_desc text-lg leading-snug" id="researchDesc"
+            class="research_desc  leading-snug lg:pr-24" id="researchDesc"
             v-html="research_line.description"
         ></div>
-    
-        <h6 class="mt-6 uppercase font-semibold text-sm text-nrj-eg">Founded by:</h6>
-        <p class="mb-2 pl-2">{{ research_line.founded_by }}</p>
 
-        <h6 class="mt-6 uppercase font-semibold text-sm text-nrj-eg">Collaborators:</h6>
-        <p class="italic pl-2">{{ research_line.collaborators }}</p>
+        <div class="research_desc text-base lg:pr-24">
+            <h6 class="mt-6 uppercase font-semibold text-sm text-nrj-eg">Founded by:</h6>
+            <p class="mb-2 pl-2">{{ research_line.founded_by }}</p>
 
-        <hr class="mt-6"/>
+            <h6 class="mt-6 uppercase font-semibold text-sm text-nrj-eg">Collaborators:</h6>
+            <p class="italic pl-2">{{ research_line.collaborators }}</p>
 
-        <h6 class="mt-12 uppercase font-semibold text-sm text-azul-eg mb-6">recent pubblications:</h6>
-    
-        <div v-for="pub in pubblications" class="mb-6">   
-            <p class="text-sm mb-2 "> {{ pub.authors }} <strong class="font-semibold text-morado-eg"> {{ pub.year }}</strong></p>
-            <h3 class="font-bold text-azul-eg mb-0 pl-2">{{ pub.title }}</h3>
-            <p class=" italic pl-2 mt-2">{{ pub.review }}</p>
+            <NuxtLink to="pubblications/"
+            class="border border-stone-200 pl-6 pr-3 py-2 font-semibold rounded-full block mt-12 uppercase bg-nrj-eg text-white hover:bg-gray-500 hover:text-white transition-all text-sm"
+            >recent pubblications ...</NuxtLink>
         </div>
+
+        
     
     </div>
 </template>
@@ -59,6 +57,6 @@
 
 <style>
     #researchDesc p{
-        @apply mb-2 leading-snug;
+        @apply mb-2 leading-snug  pl-2 ;
     }
 </style>

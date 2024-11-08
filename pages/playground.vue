@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <!--
+    
     <div class="fixed bottom-0 left-0 w-full h-[100vh] mix-blend-multiply" >
       <section class="grid grid-cols-9 " >
         <div class="col-start-6 col-span-2 " >
@@ -18,7 +18,7 @@
       </section>
         
     </div>
-  -->
+  
     
 
     <!-- head small -->

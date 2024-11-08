@@ -1,0 +1,140 @@
+[
+  {
+    "code": "A",
+    "code3": "Ala",
+    "aminoacis": "Alanine",
+    "codons": "GCA, GCC, GCG, GCT"
+  },
+  {
+    "code": "B",
+    "code3": "Asx",
+    "aminoacis": "Asparagine or Aspartic acid",
+    "codons": "AAC, AAT, GAC, GAT"
+  },
+  {
+    "code": "C",
+    "code3": "Cys",
+    "aminoacis": "Cysteine",
+    "codons": "TGC, TGT"
+  },
+  {
+    "code": "D",
+    "code3": "Asp",
+    "aminoacis": "Aspartic acid",
+    "codons": "GAC, GAT"
+  },
+  {
+    "code": "E",
+    "code3": "Glu",
+    "aminoacis": "Glutamic acid",
+    "codons": "GAA, GAG"
+  },
+  {
+    "code": "F",
+    "code3": "Phe",
+    "aminoacis": "Phenylalanine",
+    "codons": "TTC, TTT"
+  },
+  {
+    "code": "G",
+    "code3": "Gly",
+    "aminoacis": "Glycine",
+    "codons": "GGA, GGC, GGG, GGT"
+  },
+  {
+    "code": "H",
+    "code3": "His",
+    "aminoacis": "Histidine",
+    "codons": "CAC, CAT"
+  },
+  {
+    "code": "I",
+    "code3": "Ile",
+    "aminoacis": "Isoleucine",
+    "codons": "ATA, ATC, ATT"
+  },
+  {
+    "code": "K",
+    "code3": "Lys",
+    "aminoacis": "Lysine",
+    "codons": "AAA, AAG"
+  },
+  {
+    "code": "L",
+    "code3": "Leu",
+    "aminoacis": "Leucine",
+    "codons": "CTA, CTC, CTG, CTT, TTA, TTG"
+  },
+  {
+    "code": "M",
+    "code3": "Met",
+    "aminoacis": "Methionine",
+    "codons": "ATG"
+  },
+  {
+    "code": "N",
+    "code3": "Asn",
+    "aminoacis": "Asparagine",
+    "codons": "AAC, AAT"
+  },
+  {
+    "code": "P",
+    "code3": "Pro",
+    "aminoacis": "Proline",
+    "codons": "CCA, CCC, CCG, CCT"
+  },
+  {
+    "code": "Q",
+    "code3": "Gln",
+    "aminoacis": "Glutamine",
+    "codons": "CAA, CAG"
+  },
+  {
+    "code": "R",
+    "code3": "Arg",
+    "aminoacis": "Arginine",
+    "codons": "AGA, AGG, CGA, CGC, CGG, CGT"
+  },
+  {
+    "code": "S",
+    "code3": "Ser",
+    "aminoacis": "Serine",
+    "codons": "AGC, AGT, TCA, TCC, TCG, TCT"
+  },
+  {
+    "code": "T",
+    "code3": "Thr",
+    "aminoacis": "Threonine",
+    "codons": "ACA, ACC, ACG, ACT"
+  },
+  {
+    "code": "V",
+    "code3": "Val",
+    "aminoacis": "Valine",
+    "codons": "GTA, GTC, GTG, GTT"
+  },
+  {
+    "code": "W",
+    "code3": "Trp",
+    "aminoacis": "Tryptophan",
+    "codons": "TGG"
+  },
+  {
+    "code": "Y",
+    "code3": "Tyr",
+    "aminoacis": "Tyrosine",
+    "codons": "TAC, TAT"
+  },
+  {
+    "code": "Z",
+    "code3": "Glx",
+    "aminoacis": "Glutamine or Glutamic acid",
+    "codons": "CAA, CAG, GAA, GAG"
+  },
+  {
+    "code": "*",
+    "code3": "*",
+    "aminoacis": "stop codon",
+    "codons": "TAA, TAG, TGA"
+  }
+]

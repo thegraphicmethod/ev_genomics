@@ -3,7 +3,7 @@
     <div
         v-for="(entry,index) in entries"
         :key="entry.title"
-        class="mb-6 w-5/6"
+        class="mb-6 md:w-5/6"
     >
         <NuxtLink :to="'/blog/' + entry.slug" :key="entry.slug">
             <p class="mb-2 text-sm">
@@ -31,7 +31,7 @@
 
 </script>
 
-<style >
+<style scoped>
     h3{
         @apply font-semibold text-lg leading-none mb-1;
     }

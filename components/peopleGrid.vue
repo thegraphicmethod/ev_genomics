@@ -2,7 +2,7 @@
 
     <!-- side pannel -->
     <article id="sidePannel" 
-        class="w-4/12 bg-verde-eg fixed min-h-full z-10 top-0 mix-blend-multiply transition-all"
+        class="md:w-4/12 w-11/12 bg-verde-eg fixed min-h-full z-10 top-0 md:mix-blend-multiply transition-all"
         :class = "showPannel ? 'left-0 ': '-left-[999px]'">
 
         <!-- close btn -->
@@ -29,16 +29,20 @@
 
     </article>
   
-
-
     <!-- People -->
-    <section class="grid grid-cols-9  bg-neutro-green-eg ">
-        <section class="row-start-2 col-start-5 col-span-5 pb-36">
-            <article class="grid grid-cols-5">
+    <section class="grid_eg_3 bg-neutro-green-eg pt-6 mt-6 md:mt-0 lg:pt-0">
+
+        <div class="lg:col-start-7 lg:grid hidden h-12">
+            <h6 class="uppercase font-bold text-verde-eg">People</h6>
+        </div>
+
+        <section class="lg:row-start-2 lg:col-start-5 lg:col-span-5 md:col-start-2 md:col-span-2 pb-36">
+
+            <article class="grid lg:grid-cols-5 md:grid-cols-2 pt-6 lg:pt-0">
 
                 <div 
                     v-for="one in people"
-                    class="col-span-2 mb-12 cursor-pointer"
+                    class="lg:col-span-2 mb-12 cursor-pointer"
                     @click="selectOne(one.slug)"
                 >
                     <h3 
@@ -53,9 +57,7 @@
             </article>
         </section>
 
-        <div class="col-start-7 col-span-2  h-12">
-            <h6 class="uppercase font-bold text-verde-eg">People</h6>
-        </div>
+        
     </section>
 </template>
 

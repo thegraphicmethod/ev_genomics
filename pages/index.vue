@@ -1,16 +1,17 @@
 <template>
       <!-- head home -->
       <section class="grid grid-cols-18  ">
-      <div class="h-12 bg-gray-100 mix-blend-multiply"></div>
-      <div class="h-12 bg-gray-50 mix-blend-multiply"></div>
+        <div class="h-12 bg-gray-100 mix-blend-multiply"></div>
+        <div class="h-12 bg-gray-50 mix-blend-multiply"></div>
+        <div class="h-12 border-r border-white"></div>
 
-      <div class="col-span-6"></div>
+        <div class="col-span-5"></div>
 
-      <!-- nav test-->
-      <NavGlobal></NavGlobal>
+          <!-- nav test-->
+          <NavGlobal></NavGlobal>
 
-      <div class="h-12 col-start-1 bg-gray-50 mix-blend-multiply"></div>
-    </section>
+        <div class="h-12 col-start-1 bg-gray-50 mix-blend-multiply"></div>
+      </section>
 
     <!-- hero -->
     <section class="grid grid-cols-9 my-12">
@@ -50,7 +51,7 @@
 
     <!-- main research lines -->
     <section class="grid grid-cols-9 ">
-      <div class="col-start-6 col-span-4 h-px bg-stone-200 mt-12"></div>
+      <div class="col-start-6 col-span-4 h-px bg-gray-300 mt-12"></div>
     </section>
 
     <!-- main research lines -->
